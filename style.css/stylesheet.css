@@ -21,6 +21,31 @@ background: #5C94FC;
         padding-right:5em;
     }
 }
+
+.nav-about{
+    background: #E03938;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-left:5em;
+        width: 100%;
+        position:fixed;
+        z-index: 999;
+        top:0px;
+        .left{
+            position: flex;
+            justify-content:flex-start;
+            width:50%;
+        }
+        .right{
+            display: flex;
+            width: 50%;
+            justify-content:space-around;
+            align-items: center;
+            padding-right:5em;
+        }
+    
+}
 .title {
     color:white;
     margin-left: 1em;
