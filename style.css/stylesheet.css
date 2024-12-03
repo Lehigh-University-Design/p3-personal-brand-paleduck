@@ -84,13 +84,19 @@ background: #5C94FC;
     min-height: 30vh;
     background-color: #8da4d0;
     position: relative;
+}
+
+.grid-child-right {
+    min-height: 30vh;
+    background-color: #8da4d0;
+    position: relative;
+    margin-top:-10%;
     .clouds {
         z-index: 0;
         background: magenta;
         display: flex;
         justify-content: center; /* Centers horizontally */
         margin-bottom: -30%;
-
     }
     .pipes { 
         z-index: 1;
