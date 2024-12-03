@@ -53,7 +53,7 @@ background: #5C94FC;
 .grid-parent {
     display: grid;
     /*grid-template-columns: 25% 75%;*/
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 2fr 2fr;
     gap: 3em;
     justify-content: center;
     margin:auto;
@@ -65,13 +65,46 @@ background: #5C94FC;
 .grid-child {
     min-height: 30vh;
     background-color: #8da4d0;
+    position: relative;
+    .clouds {
+        z-index: 0;
+        background: magenta;
+        display: flex;
+        justify-content: center; /* Centers horizontally */
 
+    }
+    .pipes { 
+        z-index: 1;
+        background: black; 
+        display: flex;
+        justify-content: center; /* Centers horizontally */
+    }
+    .blocks {
+        z-index: 2;
+        background: pink; 
+        display: flex;
+        justify-content: start;
+
+    }
+    .mario {
+        z-index: 9999;
+        display: flex;
+        margin-top: -100%;
+        justify-content: center;
+
+    }
 }
+
+
 
 a {
     text-decoration: none !important;
     color: white;
   }
+
+
+html { height: 100%; }
+body { min-height: 100%; }
 
 body {
     min-height: 100vh;
