@@ -7,18 +7,6 @@ background: #5C94FC;
     position:fixed;
     z-index: 999;
     top:0px;
-    .left{
-        position: flex;
-        justify-content:flex-start;
-        width:50%;
-    }
-    .right{
-        display: flex;
-        width: 50%;
-        justify-content:space-around;
-        align-items: center;
-        padding-right:5em;
-    }
 }
 
 .nav-about{
@@ -26,7 +14,6 @@ background: #5C94FC;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding-left:5em;
         width: 100%;
         position:fixed;
         z-index: 999;
@@ -50,11 +37,39 @@ background: #5C94FC;
     margin-left: 1em;
 }
 
+.grid-parent-about {
+    grid-template-columns: 2fr 3fr;
+    gap: 3em;
+    justify-content: center;
+    display: grid;
+    margin:auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+} 
+
+.grid-child-about {
+    min-height: 30vh;
+    background-color: #8da4d0;
+    position: relative;
+}
+
+.about-container {
+    padding: 2em;
+    background-color: #FFF;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 .grid-parent {
     display: grid;
     /*grid-template-columns: 25% 75%;*/
     grid-template-columns: 2fr 2fr;
     gap: 3em;
+    display: grid;
     justify-content: center;
     margin:auto;
     width: 100%;
@@ -71,6 +86,7 @@ background: #5C94FC;
         background: magenta;
         display: flex;
         justify-content: center; /* Centers horizontally */
+        margin-bottom: -30%;
 
     }
     .pipes { 
@@ -79,19 +95,29 @@ background: #5C94FC;
         display: flex;
         justify-content: center; /* Centers horizontally */
     }
-    .blocks {
+    .blocks-top-right {
+        z-index: 2;
+        background: pink; 
+        display: flex;
+        justify-content: end;      
+    }
+    .blocks-bottom-left {
         z-index: 2;
         background: pink; 
         display: flex;
         justify-content: start;
-
+    
     }
     .mario {
-        z-index: 9999;
+        z-index: 3;
         display: flex;
         margin-top: -100%;
         justify-content: center;
-
+    }
+    .coin {
+        z-index: 4;
+        display: flex;
+        margin-left: 8.5em;
     }
 }
 
@@ -107,7 +133,6 @@ html { height: 100%; }
 body { min-height: 100%; }
 
 body {
-    min-height: 100vh;
     font-family:"Inter";
     margin: 0;
     padding: 0;
@@ -146,6 +171,16 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+h2 {
+    color: #000;
+    font-family: "ADLaM Display";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .h3 {
