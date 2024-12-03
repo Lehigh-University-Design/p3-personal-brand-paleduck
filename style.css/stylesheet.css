@@ -38,23 +38,12 @@ background: #5C94FC;
     margin-bottom:0;
 }
 
-
-.grid-parent-about {
-    grid-template-columns: 2fr 3fr;
-    gap: 3em;
-    justify-content: center;
-    display: grid;
-    margin:auto;
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-} 
-
-.grid-child-about {
-    min-height: 30vh;
-    height: 100%;
-    background-color: #8da4d0;
-    position: relative;
+.sidebyside {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 32px;
 }
 
 .about-container {
@@ -82,7 +71,6 @@ background: #5C94FC;
 
 .grid-child {
     min-height: 30vh;
-    background-color: #8da4d0;
     position: relative;
 }
 
