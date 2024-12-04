@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About</title>
         <link rel="stylesheet" href="style.css/stylesheet.css">
+        <link rel="stylesheet" href="style.css/plumbing.css">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,6 +20,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Press+Start+2P&display=swap" rel="stylesheet">    
 </head>
+
+<body onload="playSound()">
+
+    <audio id="myAudio" src="audio/let's a go.mp3" preload="auto"></audio>
+    
+    <script>
+    function playSound() {
+      var audio = document.getElementById("myAudio");
+      audio.play();
+    }
+    </script>
+    
+
 <body style="background-color:#BC061F">
     <div class="nav-about">
         <p><a href="index.html">home</a></p>
@@ -28,9 +43,42 @@
         <div class="sidebyside">
                 <img src="Images/mariocrosshands.png" style="position: relative; width: 50%;">
                 <div class="about-container">
-                    <h2>About Mario</h2>
+                    <h2 class="title">About Mario</h2>
                     <p>Mario, the founder and co-owner of Super Mario Bros Plumbing, is a multi-talented man with a love for helping people and adventure. During times of peace in the Mushroom Kingdom, with the help of his brother, Luigi, he makes it a mission to protect the plumbing of people in need throughout New York.</p>
                 </div>
         </div>
+    </div>
+    <div class="coins">
+        <div class="left">
+            <img src="Images/Coingroup.png" width="100%">
+        </div>
+        <div class="right">
+            <img src="Images/Coingroup.png" width="100%">
+        </div>
+    </div>
+    <div class="container">
+        <h2>Fun Facts</h2>
+        <p>When I’m not chasing down Koopas or jumping on Goombas, I enjoy racing karts, playing sports with friends, and of course, plumbing!</p>
+            
+        <p><b>Hobbies:</b> Kart racing, tennis, golf, and sometimes taking a well-deserved nap.</p>
+        <p><b>Favorite Foods:</b> Mushrooms and pasta!</p>
+        <p><b>Favorite Power-Up:</b> Super Star—nothing beats being invincible!</p>
+        <p><b>Favorite Color:</b> Red— the color of passion!</p>
+        <p><b>Best Friend:</b> Luigi!</p>
+        <p><b>Life Goal:</b> To help and protect the people around me.</p>
+        <br>
+    </div>
+    <div class="container-title">
+        <h2>Favorite Catchphases</h2></div>
+    <div class="container-catchphrases">
+        <div class="container-blue">
+        <img src="Images/favoritecatchphrases.png" width="100%"></div>
+    </div>
+    <div class ="container-plumbing-ad">
+        <h2>Check out my plumbing services!</h2>
+        <button class="button"><a href="plumbingservices.html">Let’s-a-go!</a></button>
+        <img class="ad" src="Images/mario running.png">
+    </div>
+    <div>
     </div>
 </body>
