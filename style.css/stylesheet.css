@@ -1,5 +1,4 @@
 .nav{
-    background-color:#5C94FC;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -258,6 +257,9 @@ h2 {
     }
     .coin {
         gap: 10em;
+    }
+    .nav {
+        background-color: #5C94FC;
     }
 }
 
