@@ -1,33 +1,44 @@
+.container-plumbing {
+    max-width: 100%;
+    padding-top:3.5em;
+    padding-bottom:3.5em;
+    padding-left:6em;
+    padding-right: 6em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
 .cardholder {
     display: flex;
     max-width: 100%;
-    padding-left: 6em;
-    margin: 6em;
+    margin-right: 6em;
+    margin-left: 6em;
     justify-content: center;
-    align-items: center;
+    gap: 2rem;
+    column-gap: 4em;
+    flex-direction: row;
+
 }
 
 .card {
     display: flex;
-    width: 15rem;
-    height: 19rem;
-    padding: 3em;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    padding: 2rem;
     font-size: 2rem;
     gap: 2rem;
     color: white;
+    min-width: 6rem;
     flex-shrink: 0;
     border-radius: 2rem;
     background: #FB6C00;
     box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.25);
 }
 
-.video {
-    display: flex;
-    justify-content: center;
-}
 
 .smb-nav-bar {
     display: flex;
@@ -37,10 +48,9 @@
     flex-direction: column;
     .row {
         display: inline-flex;
-        flex-direction: row;
         justify-content:center;
         align-items: center;
-        gap: 4rem;
+        column-gap: 4em;
         margin:0;
     }
     .icons {
@@ -57,6 +67,14 @@ h3 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.h3-smb {
+    color: #008088;
+    font-family: "ADLaM Display";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     margin-bottom: 0;
 }
 
@@ -67,4 +85,35 @@ h4 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+@media only screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        row-gap:0.5rem;
+    }
+    .container-plumbing {
+        padding:0;
+    }
+    .reviews {
+        flex-direction: column;
+}
+    @media only screen and (max-width: 1050px) {
+    .cardholder {
+        flex-direction: column;
+    }
+    .sidebyside {
+        flex-direction: column;
+        margin:0;
+    }
+    .text {
+        max-width: 60%;
+    }
+}
+
+.reviews {
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }

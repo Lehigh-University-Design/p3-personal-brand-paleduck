@@ -58,6 +58,12 @@
     align-items: center;
     gap: 6em;
     margin-top: 32px;
+    .text {
+    display: block;
+    }
+    .right {
+    display: flex;
+    }
 }
 
 .coins 
@@ -251,7 +257,7 @@ h2 {
         padding: 2em;
     }
     .coin {
-        gap: 1em;
+        gap: 10em;
     }
 }
 
@@ -269,6 +275,7 @@ h2 {
     display: flex;
     flex-direction: column;
 }
+
 
 .container-plumbing-ad {
     background-color: white;   
