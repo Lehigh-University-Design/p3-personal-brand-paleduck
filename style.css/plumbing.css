@@ -53,11 +53,12 @@
         column-gap: 4em;
         margin:0;
     }
-    .icons {
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-    }
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
 }
 
 h3 {
@@ -101,6 +102,15 @@ h4 {
     .button-schedule {
         font-size: 1rem;
     }
+    .footer-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .footer {
+        padding-left:0;
+        padding-left:0;
+
+    }
 
 }
     @media only screen and (max-width: 1050px) {
@@ -137,7 +147,10 @@ h4 {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    padding: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+    padding-bottom:1em;
     margin-bottom: 0;
     height: auto;
     color: #000;
@@ -146,6 +159,12 @@ h4 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.footer-row {
+    display: flex;
+    gap: 2em;
+    margin-bottom: 1.5em;
 }
 
 .button-schedule {
