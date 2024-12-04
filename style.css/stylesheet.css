@@ -64,14 +64,16 @@
 {   display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30em;
+    gap: 20em;
     .left {
         display: flex;
         justify-content: flex-end;
+        min-width: 20rem
     }
     .right {
         display: flex;
         justify-content: flex-end;
+        min-width: 20rem
     }
 }
  
@@ -247,6 +249,9 @@ h2 {
     }
     .container-plumbing-ad {
         padding: 2em;
+    }
+    .coin {
+        gap: 1em;
     }
 }
 

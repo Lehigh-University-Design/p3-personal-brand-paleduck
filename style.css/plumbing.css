@@ -1,0 +1,70 @@
+.cardholder {
+    display: flex;
+    max-width: 100%;
+    padding-left: 6em;
+    margin: 6em;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    width: 15rem;
+    height: 19rem;
+    padding: 3em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    gap: 2rem;
+    color: white;
+    flex-shrink: 0;
+    border-radius: 2rem;
+    background: #FB6C00;
+    box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.25);
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+.smb-nav-bar {
+    display: flex;
+    background-color:black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .row {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        gap: 4rem;
+        margin:0;
+    }
+    .icons {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+}
+
+h3 {
+    color: #008088;
+    font-family: "ADLaM Display";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+h4 {
+    color: #FFF;
+    font-family: "ADLaM Display";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
