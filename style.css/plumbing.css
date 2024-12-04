@@ -120,10 +120,8 @@ h4 {
     background-color: #000000;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-direction: row;
-    max-height: 4em;
-    padding-left: 3em;
-    padding-right: 3em;
     height: auto;
     color: #FFF;
     font-family: "ADLaM Display";
@@ -131,7 +129,7 @@ h4 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    
+    padding:0.5rem;
 }
 
 .footer {
@@ -151,7 +149,6 @@ h4 {
 }
 
 .button-schedule {
-    display: inline-flex;
     padding: 0.625rem 1.25rem;
     justify-content: center;
     align-items: center;
