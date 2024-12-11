@@ -244,8 +244,10 @@ h2 {
         flex-direction: column;
         margin: auto;
     }
-    .ad {
+    #ad {
         width:100vh;
+        margin: 0;
+        z-index: 1;
     }
     .container {
         padding-top: 2em;
@@ -285,10 +287,19 @@ h2 {
     padding-top:3.5em;
     padding-left: 6em;
     padding-right: 6em;
-    padding-bottom:0;
+    padding-bottom:3.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#ad {
+    width:100%;
+    left: 0;
+    right:0;
+    margin: 0;
+    z-index: 1;
+    position: absolute;
 }
 
 .container-title {
@@ -326,4 +337,13 @@ h2 {
 
 .indent {
     padding-left: auto;
+}
+
+
+.redbgfooter {
+    width: 100%;
+    margin: 0;
+    padding:0;
+    height: 175px;
+    background-color: #BC061F;
 }

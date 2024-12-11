@@ -129,18 +129,31 @@ h4 {
 .schedule-service {
     background-color: #000000;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-direction: row;
+    justify-content: space-between;
     height: auto;
     color: #FFF;
     font-family: "ADLaM Display";
     font-size: 2rem;
     font-style: normal;
     gap: 2em;
+    width: 100%;
     font-weight: 400;
     line-height: normal;
-    padding:0.5rem;
+    
+    .left {
+        display: flex;
+        margin-left: 4em;
+        justify-content: left;
+        align-items: left;
+    }
+    .right {
+        display: flex;
+        justify-content: right;
+        align-items: right;
+        margin-right:4em;
+    }
 }
 
 .footer {
